@@ -79,6 +79,7 @@ suspend fun calculateNumbers(a: Int, b: Int): Int {
 }
 
 fun printNumbers() = runBlocking {
+
     val job = GlobalScope.launch {
 
         for (i in 1..5) {
